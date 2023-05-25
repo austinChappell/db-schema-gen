@@ -1,6 +1,8 @@
 {
   "version": "0.1.0",
   "license": "MIT",
+  "description": "A tool for generating TypeScript types from database schemas",
+  "repository": "https://github.com/austinChappell/db-schema-gen",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
