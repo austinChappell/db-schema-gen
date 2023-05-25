@@ -48,10 +48,15 @@
   ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^8.2.4",
+    "@types/yargs": "^17.0.24",
     "husky": "^8.0.3",
     "size-limit": "^8.2.4",
     "tsdx": "^0.14.1",
     "tslib": "^2.5.2",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "postgres": "^3.3.4",
+    "yargs": "^17.7.2"
   }
 }
