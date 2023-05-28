@@ -14,14 +14,15 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build",
+    "build": "tsdx build && yarn after",
     "test": "tsdx test",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
+    "prepare": "tsdx build && yarn after",
     "size": "size-limit",
+    "after": "echo '#!/usr/bin/env node' | cat - dist/index.js > temp && mv temp dist/index.js",
     "analyze": "size-limit --why"
   },
-  "bin": "dist/index.js",
+  "bin": "node dist/index.js",
   "peerDependencies": {},
   "husky": {
     "hooks": {
